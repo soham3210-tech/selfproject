@@ -7,7 +7,9 @@ function Navbar() {
       <ul class="nav-links">
         <li><a href="#">HOME</a></li>
         <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
+        <li><a href="#">CONTACT</a></li>
+        <li><a href="#">Blog</a></li>
+        <li><a href="#">Books</a></li>
         <li><a href="#">ABOUT</a></li>
       </ul>
       <div class="btns"><button class="btn">Login / Signup</button>

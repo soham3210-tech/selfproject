@@ -13,18 +13,30 @@ nav {
 }
 
 .logo {
-    width: 60px;
-    height: 100%;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    /* 👈 very important */
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 .logo img {
-    height: 100%;
     width: 100%;
-    object-fit: contain;
-    /*helps to fit the image in the container*/
+    height: 100%;
+    object-fit: cover;
+    /* 👈 fills circle properly */
 }
+
+.logo img:hover {
+    transform: translateY(-3px);
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+
 
 .nav-links {
     list-style: none;
@@ -70,4 +82,7 @@ nav {
 .btn:hover {
     background-color: #e1df5e;
     text-shadow: 0 0 10px #e7d45a;
+    transform: translateY(-3px);
+    /* moves up */
+
 }
