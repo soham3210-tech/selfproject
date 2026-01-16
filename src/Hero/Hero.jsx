@@ -1,10 +1,12 @@
 import { useState } from "react";
 import "./hero.css";
+import Service from "../pages/Service";
 
 // Import images - this is required in Vite/React!
 import poster1 from "../assets/poster1.jpg";
-import poster2 from "../assets/poster2.jpeg";
-
+import poster2 from "../assets/poster2.jpg";
+import poster3 from "../assets/poster3.jpg";
+import poster4 from "../assets/poster4.jpeg";
 function Hero() {
     // Array of poster images with their info
     const posters = [
@@ -15,8 +17,17 @@ function Hero() {
         },
         {
             image: poster2,
-            title: "Poster Title 2",
-            description: "Write your description here about this poster. You can add more details about what this image represents."
+            title: "Shree sundar Maharaj Kamal nayan poudel",
+            description: "Pandit Ji is a dedicated Sanatani Pandit who has been serving Dharma through Vedic rituals and spiritual guidance. He performs all kinds of Pujas and Karmakanda Vidhi, conducts Chhina rituals as per Shastra, and carefully analyzes Kundalis to guide devotees in important life matters. His work is rooted in faith, purity, and the timeless wisdom of Sanatan Dharma."
+        },
+        {
+            image: poster3,
+            title: "Shree Ankhada bholabhakta Sagarmani",
+            description: "Pandit Ji is a dedicated Sanatani Pandit who has been serving Dharma through Vedic rituals and spiritual guidance. He performs all kinds of Pujas and Karmakanda Vidhi, conducts Chhina rituals as per Shastra, and carefully analyzes Kundalis to guide devotees in important life matters. His work is rooted in faith, purity, and the timeless wisdom of Sanatan Dharma."
+        }, {
+            image: poster4,
+            title: "Creator Soham Thapaliya",
+            description: "Pandit Ji is a dedicated Sanatani Pandit who has been serving Dharma through Vedic rituals and spiritual guidance. He performs all kinds of Pujas and Karmakanda Vidhi, conducts Chhina rituals as per Shastra, and carefully analyzes Kundalis to guide devotees in important life matters. His work is rooted in faith, purity, and the timeless wisdom of Sanatan Dharma."
         }
     ];
 
@@ -49,9 +60,10 @@ function Hero() {
         setCurrentIndex(index);
     }
 
-    return (<>
+    return (
         <div className="hero-container">
-            <h2>Meet our GURU's</h2>
+            <h1 className="text-2xl font-bold text-4xl tracking-tight  mb-8 text-amber-600">Our Guru</h1>
+
             {/* Main hero section - image and content side by side */}
             <div className="hero">
                 {/* Left side - Image */}
@@ -75,7 +87,7 @@ function Hero() {
                 <div className="hero-content">
                     <h1 className="hero-title" style={{ color: "#db9119ff", fontWeight: "bold" }}>{posters[currentIndex].title}</h1>
                     <p className="hero-description" style={{ color: "#ddcc13ff", fontWeight: "bold" }}>{posters[currentIndex].description}</p>
-                    <button className="hero-btn">Learn More</button>
+                    <button className="hero-btn">Contact</button>
                 </div>
             </div>
 
@@ -89,8 +101,11 @@ function Hero() {
                     />
                 ))}
             </div>
+            <Service />
+
+
         </div>
-    </>
+
     );
 }
 

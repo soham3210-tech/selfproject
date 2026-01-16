@@ -1,9 +1,7 @@
 .hero-container {
-    width: 80%;
-    margin-left: 5%;
-    margin-bottom: 5%;
-    margin: 0 auto;
-
+    width: 90%;
+    max-width: 1200px;
+    margin: 40px auto;
 }
 
 .hero {
@@ -16,6 +14,7 @@
 }
 
 .hero:hover {
+
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 
 }
@@ -91,23 +90,6 @@
     margin-bottom: 30px;
 }
 
-.hero-btn {
-    width: fit-content;
-    padding: 14px 35px;
-    font-size: 1rem;
-    font-weight: 600;
-    color: white;
-    background: linear-gradient(135deg, #e94560 0%, #c23a51 100%);
-    border: none;
-    border-radius: 30px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.hero-btn:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 30px rgba(233, 69, 96, 0.4);
-}
 
 /* Arrow buttons */
 .arrow {
