@@ -1,9 +1,11 @@
+import Hero from '../Hero/Hero';
 
-const Home = () => {
+function Home() {
     return (
-        <div>
-            This is the home section i am goona write here hero section only ;
+        <div className="page-content">
+            <Hero />
         </div>
-    )
+    );
 }
-export default Home
+
+export default Home;
