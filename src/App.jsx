@@ -6,9 +6,9 @@ import Service from './pages/Service';
 import Blog from './pages/Blog';
 import Book from './pages/Book';
 import Contact from './pages/Contact';
+import LoginSignup from './loginorsignupsection/login';
 import './App.css';
 import Footer from './Footer/Footer';
-
 
 function App() {
   return (
@@ -21,6 +21,7 @@ function App() {
         <Route path="/blog" element={<Blog />} />
         <Route path="/book" element={<Book />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<LoginSignup />} />
       </Routes>
       <Footer />
     </>

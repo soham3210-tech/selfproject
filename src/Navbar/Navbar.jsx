@@ -17,7 +17,7 @@ function Navbar() {
         <li><Link to="/about">ABOUT</Link></li>
       </ul>
       <div className="btns">
-        <button className="btn">Login / Signup</button>
+        <Link to="/login"><button className="btn" >Login / Signup</button></Link>
       </div>
     </nav>
   );
