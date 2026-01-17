@@ -1,15 +1,69 @@
 @import "tailwindcss";
 
+@theme {
+    --animate-flip-next: flipToNext 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    --animate-flip-prev: flipToPrev 0.8s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+    --animate-page-edge: pageEdge 0.8s ease-in-out;
+
+    @keyframes flipToNext {
+        0% {
+            transform: rotateY(0deg);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        50% {
+            transform: rotateY(-90deg);
+            box-shadow: 20px 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        100% {
+            transform: rotateY(0deg);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+    @keyframes flipToPrev {
+        0% {
+            transform: rotateY(0deg);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+
+        50% {
+            transform: rotateY(90deg);
+            box-shadow: -20px 0 50px rgba(0, 0, 0, 0.5);
+        }
+
+        100% {
+            transform: rotateY(0deg);
+            box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+        }
+    }
+
+    @keyframes pageEdge {
+
+        0%,
+        100% {
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    font-family: "Poppins", sans-serif;
-    background-color: #ffffff;
-    color: #333;
+@layer base {
+    body {
+        font-family: "Poppins", sans-serif;
+        background-color: #ffffff;
+        color: #333;
+    }
 }
 
 .hero-btn {

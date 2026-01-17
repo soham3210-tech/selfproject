@@ -7,7 +7,7 @@ import Blog from './pages/Blog';
 import Book from './pages/Book';
 import Contact from './pages/Contact';
 import './App.css';
-
+import Footer from './Footer/Footer';
 
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
         <Route path="/book" element={<Book />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-
+      <Footer />
     </>
   );
 }

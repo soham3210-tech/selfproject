@@ -1,7 +1,6 @@
 import { useState } from "react";
-import "./hero.css";
 import Service from "../pages/Service";
-
+import "./hero.css";
 // Import images - this is required in Vite/React!
 import poster1 from "../assets/poster1.jpg";
 import poster2 from "../assets/poster2.jpg";
