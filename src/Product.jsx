@@ -6,13 +6,13 @@ import tritha from "./assets/Tritha.png";
 import jyotishi from "./assets/Jyotishi.png";
 
 const products = [
-    { id: 1, name: 'Puga', href: '#', imageSrc: puga, imageAlt: "Puga product", color: 'Black' },
-    { id: 2, name: 'Puga Samagri', href: '#', imageSrc: pugaSamagri, imageAlt: "Puga Samagri product", color: 'Aspen White' },
+    { id: 1, name: 'Puja', href: '#', imageSrc: puga, imageAlt: "Puga product", color: 'Black' },
+    { id: 2, name: 'Puja Samagri', href: '#', imageSrc: pugaSamagri, imageAlt: "Puga Samagri product", color: 'Aspen White' },
     { id: 3, name: 'Education', href: '#', imageSrc: education, imageAlt: "Education product", color: 'Charcoal' },
     { id: 4, name: 'Tritha', href: '#', imageSrc: tritha, imageAlt: "Tritha product", color: 'Iso Dots' },
     // Adding more for demo scroll
     { id: 5, name: 'Jyotishi', href: '#', imageSrc: jyotishi, imageAlt: "Jyotishi product", color: 'Black' },
-    { id: 6, name: 'Puga Samagri 2', href: '#', imageSrc: pugaSamagri, imageAlt: "Puga Samagri product", color: 'Aspen White' },
+    { id: 6, name: 'Puja Samagri 2', href: '#', imageSrc: pugaSamagri, imageAlt: "Puga Samagri product", color: 'Aspen White' },
 ];
 
 export default function Product() {

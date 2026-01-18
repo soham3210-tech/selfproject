@@ -4,7 +4,7 @@ export default function Footer() {
     return (
         <footer className="section-p1">
             <div className="col">
-                <img className="logo" src="img/logo.png" alt="" />
+                <img className="logo" src="assets/Sanatan-Path-Logo.png" alt="" />
                 <h4>Contact</h4>
                 <p><strong>Address:</strong> 562 Wellington Road, Street 32, San Francisco</p>
                 <p><strong>Phone:</strong> +01 2222 365 /(+91) 01 2345 6789</p>
