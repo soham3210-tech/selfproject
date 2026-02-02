@@ -3,7 +3,7 @@ import puga from "./assets/Puga.png";
 import pugaSamagri from "./assets/PugaSamagri.png";
 import education from "./assets/Education.png";
 import tritha from "./assets/Tritha.png";
-import jyotishi from "./assets/Jyotishi.png";
+import jyotishi from "./assets/jyotishi.png";
 
 const products = [
     { id: 1, name: 'Puja', href: '#', imageSrc: puga, imageAlt: "Puga product", color: 'Black' },

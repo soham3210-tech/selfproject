@@ -12,6 +12,8 @@ function Navbar() {
 
   return (
     // 'nav-active' class is toggled based on isMenuOpen state for CSS animations
+    //const navClass = isMenuOpen ? 'nav-active' : '';
+    //<nav className={navClass}></nav>
     <nav className={isMenuOpen ? 'nav-active' : ''}>
       <div className="logo">
         <Link to="/" onClick={closeMenu}><img src={logo} alt="logo" /></Link>
