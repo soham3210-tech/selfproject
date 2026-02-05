@@ -7,7 +7,7 @@ function Navbar() {
   // State to track if the mobile side-menu is open or closed
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  // Helper function to close the menu when a link is clicked
+  // Helper function to close the menu when  link is clicked
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
