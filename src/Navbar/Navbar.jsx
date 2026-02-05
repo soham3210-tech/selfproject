@@ -34,7 +34,7 @@ function Navbar() {
         <li><Link to="/about" onClick={closeMenu}>ABOUT</Link></li>
       </ul>
 
-      {/* Action Buttons - also hidden/shown with the side-menu on mobile */}
+      {/* Action Buttons -> also hidden/shown with the side-menu on mobile */}
       <div className="btns">
         <Link to="/login" onClick={closeMenu}><button className="btn" >Login / Signup</button></Link>
       </div>
