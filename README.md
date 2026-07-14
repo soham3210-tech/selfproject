@@ -1,1 +1,1 @@
-preview option ::::::: https://sanatanpath.netlify.app/login
+preview option ::::::: https://sanatanpath.netlify.app/
